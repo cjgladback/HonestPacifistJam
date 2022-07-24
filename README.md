@@ -1,8 +1,12 @@
 # Turn the Other Chick
- Creating a three legged race game for the fourth Honest Jam, aka The Pacifist Jam.
+
+ Creating a three legged race game for the fourth Honest Jam, aka [The Pacifist Jam](https://itch.io/jam/honest-jam-4).
  My goal is to get a menu, some unusual but smooth movement in 3D, and a successful build. These are three things I have not accomplished previously, so. We'll see.
+
 ---
+
 ### To Do
+
 - [ ] Make bird boxes move along ground
 - [ ] Make camera follow bird boxes' center, facing down the track, with damping (based on bird center position along track? in case we want to run backward sometimes?)
 - [ ] Limit bird boxes' distance from each other and lerp back into each other after number of seconds (based on amount of distance? slow when snapping back from the high end of distance?)
@@ -27,6 +31,7 @@
 - [ ] Speed mode
 
 ### Hierarchy
+
 - Menu
   - Play
   - Speed Mode (auto skips story; if 3,2,1 start is good for normal game flow, it's skipped here, too. if I get a timer working, it would be best looking if it didn't show until after each level, when you have the chance to breathe before advancing to the next level but speed mode would be best showing on screen during and auto-advancing, to show all completed times at the end. Maybe with full game time, including quick restarts, as well.)
