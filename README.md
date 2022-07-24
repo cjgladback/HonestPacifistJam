@@ -1,14 +1,14 @@
 # Turn the Other Chick
 
  Creating a three legged race game for the fourth Honest Jam, aka [The Pacifist Jam](https://itch.io/jam/honest-jam-4).
- My goal is to get a menu, some unusual but smooth movement in 3D, and a successful build. These are three things I have not accomplished previously, so. We'll see.
+ My goal is to get a menu, some unusual but smooth movement in 3D, and a successful Godot build. These are three things I have not accomplished previously, so. We'll see.
 
 ---
 
 ### To Do
 
-- [ ] Make bird boxes move along ground
-- [ ] Make camera follow bird boxes' center, facing down the track, with damping (based on bird center position along track? in case we want to run backward sometimes?)
+- [ ] Make bird boxes move along ground, rotating to face normal of line between their centers (always with L on left and R on right, and they always have acceleration toward their combined front; hopefully this means I won't have flickering backward and forward)
+- [ ] Make camera follow bird boxes' center, facing down the track, with damping (based on bird center position along track? in case we want to run backward sometimes? don't know if that's more or less likely to bug out than if based on L and R corresponding position to track walls)
 - [ ] Limit bird boxes' distance from each other and lerp back into each other after number of seconds (based on amount of distance? slow when snapping back from the high end of distance?)
 - [ ] Make bird boxes slow progressively in certain collisions and bounce off others to stop
 - [ ] Separate bird boxes collisions--one should slow and cause the unit to turn, the rope between should hit only obstacles of a certain height, but either bird or rope hitting an obstacle that they bounce off should stop the unit not send it spinning.
