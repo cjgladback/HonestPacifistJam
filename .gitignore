@@ -1,0 +1,25 @@
+# Build
+/build/
+
+# Debug script
+/[Dd]ebug.gd
+
+# Godot Engine generated files
+.import/
+export.cfg
+
+# Mono
+.mono/
+/Properties/
+*.csproj
+*.sln
+mono_crash.*
+
+# GNU nano
+*.swp
+
+# VSCode
+.vscode/
+
+#Blender Items
+/turntheotherchick/assets/raw/
