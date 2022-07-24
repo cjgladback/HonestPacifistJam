@@ -3,28 +3,28 @@
  My goal is to get a menu, some unusual but smooth movement in 3D, and a successful build. These are three things I have not accomplished previously, so. We'll see.
 ---
 ### To Do
-- [] Make bird boxes move along ground
-- [] Make camera follow bird boxes' center, facing down the track, with damping (based on bird center position along track? in case we want to run backward sometimes?)
-- [] Limit bird boxes' distance from each other and lerp back into each other after number of seconds (based on amount of distance? slow when snapping back from the high end of distance?)
-- [] Make bird boxes slow progressively in certain collisions and bounce off others to stop
-- [] Separate bird boxes collisions--one should slow and cause the unit to turn, the rope between should hit only obstacles of a certain height, but either bird or rope hitting an obstacle that they bounce off should stop the unit not send it spinning.
-- [] Menu with controls and start button
-- [] Sound settings
-- [] Basic bird models
-- [] Dynamic rope (two or more cylinders connecting birds, thinner when further apart)
-- [] Obstacle models
-- [] Run cycles (speeding up and blending more with a more intense, leaned forward run when they get closer to full speed)
-- [] Lighting
-- [] Speed line VFX for close to full speed
-- [] Bonk animation
-- [] Textures
-- [] Cutscene thumbnails
-- [] Cutscene paintings
-- [] Godot cutscene animations
-- [] Level designs
-- [] Menu level select
-- [] Timer (save high scores? display high scores on levels?)
-- [] Speed mode
+- [ ] Make bird boxes move along ground
+- [ ] Make camera follow bird boxes' center, facing down the track, with damping (based on bird center position along track? in case we want to run backward sometimes?)
+- [ ] Limit bird boxes' distance from each other and lerp back into each other after number of seconds (based on amount of distance? slow when snapping back from the high end of distance?)
+- [ ] Make bird boxes slow progressively in certain collisions and bounce off others to stop
+- [ ] Separate bird boxes collisions--one should slow and cause the unit to turn, the rope between should hit only obstacles of a certain height, but either bird or rope hitting an obstacle that they bounce off should stop the unit not send it spinning.
+- [ ] Menu with controls and start button
+- [ ] Sound settings
+- [ ] Basic bird models
+- [ ] Dynamic rope (two or more cylinders connecting birds, thinner when further apart)
+- [ ] Obstacle models
+- [ ] Run cycles (speeding up and blending more with a more intense, leaned forward run when they get closer to full speed)
+- [ ] Lighting
+- [ ] Speed line VFX for close to full speed
+- [ ] Bonk animation
+- [ ] Textures
+- [ ] Cutscene thumbnails
+- [ ] Cutscene paintings
+- [ ] Godot cutscene animations
+- [ ] Level designs
+- [ ] Menu level select
+- [ ] Timer (save high scores? display high scores on levels?)
+- [ ] Speed mode
 
 ### Hierarchy
 - Menu
