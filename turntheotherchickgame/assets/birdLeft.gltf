@@ -15,13 +15,13 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "birdRight.002"
+            "name" : "birdLeft"
         }
     ],
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "birdRightMat",
+            "name" : "birdLeftMat",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
                     "index" : 0
@@ -33,7 +33,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Cube.003",
+            "name" : "Cube.005",
             "primitives" : [
                 {
                     "attributes" : {
@@ -56,66 +56,66 @@
     "images" : [
         {
             "mimeType" : "image/png",
-            "name" : "birdRightDiffuse",
-            "uri" : "birdRightDiffuse.png"
+            "name" : "birdLeftDiffuse",
+            "uri" : "birdLeftDiffuse.png"
         }
     ],
     "accessors" : [
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 2296,
+            "count" : 2294,
             "max" : [
-                1.764519453048706,
-                1.85163152217865,
-                1.8415945768356323
+                0.7646293640136719,
+                2.4330368041992188,
+                2.0948703289031982
             ],
             "min" : [
-                -0.9576750993728638,
-                0,
-                -1.0955641269683838
+                -1.7497130632400513,
+                -0.0010727643966674805,
+                -1.1453590393066406
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 2296,
+            "count" : 2294,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 2296,
+            "count" : 2294,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5123,
-            "count" : 11052,
+            "count" : 11040,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 27552,
+            "byteLength" : 27528,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 27552,
-            "byteOffset" : 27552
+            "byteLength" : 27528,
+            "byteOffset" : 27528
         },
         {
             "buffer" : 0,
-            "byteLength" : 18368,
-            "byteOffset" : 55104
+            "byteLength" : 18352,
+            "byteOffset" : 55056
         },
         {
             "buffer" : 0,
-            "byteLength" : 22104,
-            "byteOffset" : 73472
+            "byteLength" : 22080,
+            "byteOffset" : 73408
         }
     ],
     "samplers" : [
@@ -126,8 +126,8 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 95576,
-            "uri" : "birdRight.bin"
+            "byteLength" : 95488,
+            "uri" : "birdLeft.bin"
         }
     ]
 }

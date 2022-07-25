@@ -14,7 +14,8 @@
 - [ ] Separate bird boxes collisions--one should slow and cause the unit to turn, the rope between should hit only obstacles of a certain height, but either bird or rope hitting an obstacle that they bounce off should stop the unit not send it spinning.
 - [ ] Menu with controls and start button
 - [ ] Sound settings
-- [ ] Basic bird models
+- [X] Basic bird model R
+- [ ] Basic bird model L
 - [ ] Dynamic rope (two or more cylinders connecting birds, thinner when further apart)
 - [ ] Obstacle models
 - [ ] Run cycles (speeding up and blending more with a more intense, leaned forward run when they get closer to full speed)
