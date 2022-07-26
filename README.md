@@ -15,11 +15,11 @@
 - [ ] Menu with controls and start button
 - [ ] Sound settings
 - [X] Basic bird model R
-- [ ] Basic bird model L
+- [X] Basic bird model L
 - [ ] Dynamic rope (two or more cylinders connecting birds, thinner when further apart)
 - [ ] Obstacle models
 - [ ] Run cycles (speeding up and blending more with a more intense, leaned forward run when they get closer to full speed)
-- [ ] Lighting
+- [X] Lighting
 - [ ] Speed line VFX for close to full speed
 - [ ] Bonk animation
 - [ ] Textures
