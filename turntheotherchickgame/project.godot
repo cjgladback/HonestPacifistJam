@@ -14,6 +14,15 @@ config/name="Turn the Other Chick"
 run/main_scene="res://testingground.tscn"
 config/icon="res://icon.png"
 
+[importer_defaults]
+
+scene={
+"materials/storage": 2
+}
+mp3={
+"loop": false
+}
+
 [input]
 
 birdLleft={

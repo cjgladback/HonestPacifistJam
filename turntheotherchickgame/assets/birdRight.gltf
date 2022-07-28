@@ -21,13 +21,22 @@
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "birdRightMat",
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture" : {
+                "index" : 0
+            },
+            "name" : "birdRightProjections",
             "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 0
-                },
-                "metallicFactor" : 0,
-                "roughnessFactor" : 0.4000000059604645
+                "baseColorFactor" : [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
             }
         }
     ],
@@ -39,9 +48,11 @@
                     "attributes" : {
                         "POSITION" : 0,
                         "NORMAL" : 1,
-                        "TEXCOORD_0" : 2
+                        "TEXCOORD_0" : 2,
+                        "TEXCOORD_1" : 3,
+                        "TEXCOORD_2" : 4
                     },
-                    "indices" : 3,
+                    "indices" : 5,
                     "material" : 0
                 }
             ]
@@ -56,66 +67,88 @@
     "images" : [
         {
             "mimeType" : "image/png",
-            "name" : "birdRightDiffuse",
-            "uri" : "birdRightDiffuse.png"
+            "name" : "birdRightBaked2",
+            "uri" : "birdRightBaked2.png"
         }
     ],
     "accessors" : [
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 2296,
+            "count" : 2603,
             "max" : [
-                1.764519453048706,
+                0.9576750993728638,
                 1.85163152217865,
-                1.8415945768356323
+                1.0955641269683838
             ],
             "min" : [
-                -0.9576750993728638,
+                -1.764519453048706,
                 0,
-                -1.0955641269683838
+                -1.8433080911636353
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 2296,
+            "count" : 2603,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 2296,
+            "count" : 2603,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 2603,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2603,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 5,
             "componentType" : 5123,
-            "count" : 11052,
+            "count" : 12726,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 27552,
+            "byteLength" : 31236,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 27552,
-            "byteOffset" : 27552
+            "byteLength" : 31236,
+            "byteOffset" : 31236
         },
         {
             "buffer" : 0,
-            "byteLength" : 18368,
-            "byteOffset" : 55104
+            "byteLength" : 20824,
+            "byteOffset" : 62472
         },
         {
             "buffer" : 0,
-            "byteLength" : 22104,
-            "byteOffset" : 73472
+            "byteLength" : 20824,
+            "byteOffset" : 83296
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20824,
+            "byteOffset" : 104120
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 25452,
+            "byteOffset" : 124944
         }
     ],
     "samplers" : [
@@ -126,7 +159,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 95576,
+            "byteLength" : 150396,
             "uri" : "birdRight.bin"
         }
     ]
