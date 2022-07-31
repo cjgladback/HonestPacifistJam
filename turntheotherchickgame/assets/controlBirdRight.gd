@@ -33,18 +33,40 @@ func _physics_process(delta: float) -> void:
 	if (move_direction.x != 0):
 		var rot_angle = deg2rad(move_direction.x * rot_speed)
 		rotate_y(rot_angle)
-#		var rot_y = get_node("../birdRightKinematicBody").rotation.y
-#		rot_y += 
-	else:
-		return
 		
+	"""
+	Have rotation happening over time to match keys pressed. Good.
+	'Unfinished' if statement no longer interfering with execution of code below. Also good.
+		(specifically good to be affecting x axis movement of bird with keys as well as not needing
+		to hold down any key to accelerate along z axis--however, we want both other those axes to
+		rotate with the bird)
+	(Also, I'm unclear on why jumping does nothing in this context, despite currently matching the
+		relevant code cannibalized from Thatched, but with the correct action name.)
+	Need to calculate ray out from line between birds and limit (clamp) rot_angle in relation to it
+	Need to limit length of line between birds' origins to minimum 2*0.875
+	(Maximum of wherever they snap back.)
+	Then can change birds' collision layers to not interact with each other and stay in control (maybe)
+	Want acceleration to be along normal ray rather than axis of world? node? whatever that's not
+		changing when the kinematic body rotates (even when buggy things happen with collision, the
+		acceleration remains fighting to send us back along the world z axis away from camera)
+	After all of that works, we can cause hitting the brakes to subtract acceleration (or just not
+		add it while brakes are active, letting the other bird pull ahead more slowly with less
+		risk of sudden snap backs and total deceleration)
+	For snap back to not be total deceleration...probably need to track the point exactly between
+		the birds toward which they'll be snapping, but letting it continue on its vector (without
+		acceleration?) still for the half second or whatever it takes for both birds to be back in
+		range at 0.875 from center. They should be snapping back faster than the max to take off
+		so that shouldn't give us any issues. Theoretically.
+	That center point's speed should also be what we're gathering to check for takeoff conditions?
+		So we don't fulfill them with the first snapback.
+	"""
 	_velocity.z += acceleration * delta
-#	_velocity.x = move_direction.x * speed
+	_velocity.x = move_direction.x * speed
 #	_velocity.z = move_direction.z * speed
 	_velocity.y -= gravity * delta
 	
 	var just_landed := is_on_floor() and _snap_vector == Vector3.BACK
-	var is_jumping := is_on_floor() and Input.is_action_just_pressed("jump")
+	var is_jumping := is_on_floor() and Input.is_action_just_pressed("birdjump")
 	
 	if is_jumping:
 		_velocity.y = jump_strength
